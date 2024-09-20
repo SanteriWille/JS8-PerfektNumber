@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Perfekt Number</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Perfect Number</h1>
+    <h2>Skriv inn nummeret ditt her!</h2>
+    <input type="number" id="numberInput" placeholder="Tast inn et nummer">
+    <button class="check-btn" onclick="checkNumber()">Sjekk nummeret</button>
+    <button class="random-btn" onclick="randomNumber()">Tilfeldig nummer</button>
+    <div class="result" id="result"></div>
+
+    <h2>Fargevalg</h2>
+    <input type="color" id="colorPicker" onchange="setColorPicker()" value="#000000">
+
+    <h2>RGB valg</h2>
+    <div>
+      <Label>Rød</Label>
+      <input type="range" id="redSlide" min="0" max="255" value="255" oninput="setRgbColor()">
+    </div>
+
+    <div>
+      <label>Grønn</label>
+      <input type="range" id="greenSlide" min="0" max="255" value="255" oninput="setRgbColor()">
+    </div>
+
+    <div>
+      <label>Blå</label>
+      <input type="range" id="blueSlide" min="0" max="255" value="255" oninput="setRgbColor()">
+    </div>
+
+    <input type="text" id="colorInput" placeholder="Skriv inn en farge (f.eks #000000)">
+    <button onclick="setColor()">Set Color</button>
+    <button onclick="randomColor()">Random Color</button>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
